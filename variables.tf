@@ -18,9 +18,3 @@ variable "key_name" {
   type        = string
   description = "AbdulDevopsDemoKVP"
 }
-
-variable "github_deploy_pubkey" {
-  type        = string
-  description = "Public SSH key for GitHub Actions deploy"
-  default     = ""
-}
