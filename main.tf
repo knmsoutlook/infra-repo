@@ -19,7 +19,7 @@ data "aws_ami" "ubuntu" {
   }
 }
 resource "aws_security_group" "app_sg" {
-  name   = "app-sg"
+  name   = "app-sg-unique"
   vpc_id = data.aws_vpc.default.id
 }
 resource "aws_instance" "app" {
